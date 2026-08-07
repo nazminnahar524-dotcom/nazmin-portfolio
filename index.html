@@ -782,44 +782,44 @@
 
             <!-- Skills Matrix Grid -->
             <div class="skill-matrix" id="skill-matrix-container">
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="C">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'C')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-solid fa-code"></i><h4>C</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="C++">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'C++')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-solid fa-file-code"></i><h4>C++</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="Java">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'Java')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-brands fa-java"></i><h4>Java</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="Python">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'Python')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-brands fa-python"></i><h4>Python</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="Data Structures">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'Data Structures')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-solid fa-laptop-code"></i><h4>Data Structures</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="Algorithms">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'Algorithms')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-solid fa-network-wired"></i><h4>Algorithms</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="HTML / CSS">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'HTML / CSS')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-brands fa-html5"></i><h4>HTML / CSS</h4>
                 </div>
-                <div class="skill-pill">
-                    <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="skill-pill" data-id="MySQL">
+                    <button class="delete-btn" onclick="removeSkillItem(this, 'MySQL')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
                     <i class="fa-solid fa-database"></i><h4>MySQL</h4>
                 </div>
             </div>
 
-            <!-- Projects Grid Container (Updated with ZyloMart and Database Web App) -->
+            <!-- Projects Grid Container -->
             <div class="projects-grid" id="projects-grid-container">
-                <div class="project-card">
-                    <button class="delete-btn" onclick="removeProjectItem(this)" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="project-card" data-id="ZyloMart">
+                    <button class="delete-btn" onclick="removeProjectItem(this, 'ZyloMart')" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
                     <div class="project-banner">
                         <h3 style="font-size: 1.4rem;">ZyloMart</h3>
                         <p style="color: var(--text-sub); font-size: 0.85rem;">Console-based Online Shopping System</p>
@@ -834,8 +834,8 @@
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <button class="delete-btn" onclick="removeProjectItem(this)" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="project-card" data-id="Database Web Application">
+                    <button class="delete-btn" onclick="removeProjectItem(this, 'Database Web Application')" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
                     <div class="project-banner">
                         <h3 style="font-size: 1.4rem;">Database Web Application</h3>
                         <p style="color: var(--text-sub); font-size: 0.85rem;">Full-Stack Data Web App</p>
@@ -882,8 +882,8 @@
 
             <!-- Goals Grid Container -->
             <div class="goals-grid" id="goals-grid-container">
-                <div class="goal-card">
-                    <button class="delete-btn" onclick="removeGoalItem(this)" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="goal-card" data-id="Advanced Machine Learning & Predictive Modeling">
+                    <button class="delete-btn" onclick="removeGoalItem(this, 'Advanced Machine Learning & Predictive Modeling')" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
                     <div>
                         <div class="goal-icon"><i class="fa-solid fa-brain"></i></div>
                         <h3>Advanced Machine Learning & Predictive Modeling</h3>
@@ -891,8 +891,8 @@
                     </div>
                 </div>
 
-                <div class="goal-card">
-                    <button class="delete-btn" onclick="removeGoalItem(this)" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="goal-card" data-id="Generative AI & Intelligent Agents">
+                    <button class="delete-btn" onclick="removeGoalItem(this, 'Generative AI & Intelligent Agents')" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
                     <div>
                         <div class="goal-icon"><i class="fa-solid fa-robot"></i></div>
                         <h3>Generative AI & Intelligent Agents</h3>
@@ -900,8 +900,8 @@
                     </div>
                 </div>
 
-                <div class="goal-card">
-                    <button class="delete-btn" onclick="removeGoalItem(this)" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="goal-card" data-id="Full-Stack AI-Powered Web Platforms">
+                    <button class="delete-btn" onclick="removeGoalItem(this, 'Full-Stack AI-Powered Web Platforms')" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
                     <div>
                         <div class="goal-icon"><i class="fa-solid fa-layer-group"></i></div>
                         <h3>Full-Stack AI-Powered Web Platforms</h3>
@@ -940,28 +940,28 @@
 
             <!-- Gallery Grid Container -->
             <div class="gallery-grid" id="gallery-grid-container">
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic.jpeg" alt="Nazmin Photo 1" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80'">
                 </div>
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic2.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic2.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic2.jpeg" alt="Nazmin Photo 2" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=80'">
                 </div>
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic3.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic3.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic3.jpeg" alt="Nazmin Photo 3" onerror="this.src='https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=500&auto=format&fit=crop&q=80'">
                 </div>
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic4.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic4.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic4.jpeg" alt="Nazmin Photo 4" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=80'">
                 </div>
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic5.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic5.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic5.jpeg" alt="Nazmin Photo 5" onerror="this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80'">
                 </div>
-                <div class="gallery-item">
-                    <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <div class="gallery-item" data-src="pic6.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, 'pic6.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic6.jpeg" alt="Nazmin Photo 6" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=80'">
                 </div>
             </div>
@@ -1053,12 +1053,62 @@
                 document.getElementById('main-profile-img').src = savedProfilePic;
             }
 
+            initializeDefaultStorage();
             loadStoredSkills();
             loadStoredProjects();
             loadStoredGoals();
             loadStoredGallery();
             loadStoredCertificates();
         });
+
+        // Initialize default arrays in localStorage if they don't exist yet
+        function initializeDefaultStorage() {
+            if (!localStorage.getItem('nazmin_skills')) {
+                const defaultSkills = [
+                    { name: "C", icon: "fa-solid fa-code" },
+                    { name: "C++", icon: "fa-solid fa-file-code" },
+                    { name: "Java", icon: "fa-brands fa-java" },
+                    { name: "Python", icon: "fa-brands fa-python" },
+                    { name: "Data Structures", icon: "fa-solid fa-laptop-code" },
+                    { name: "Algorithms", icon: "fa-solid fa-network-wired" },
+                    { name: "HTML / CSS", icon: "fa-brands fa-html5" },
+                    { name: "MySQL", icon: "fa-solid fa-database" }
+                ];
+                localStorage.setItem('nazmin_skills', JSON.stringify(defaultSkills));
+            }
+
+            if (!localStorage.getItem('nazmin_projects')) {
+                const defaultProjects = [
+                    {
+                        title: "ZyloMart",
+                        subtitle: "Console-based Online Shopping System",
+                        desc: "An interactive console-based online shopping application built with Java to manage product catalogs, shopping carts, and user checkouts efficiently.",
+                        techs: ["Java", "Console Application", "OOP"]
+                    },
+                    {
+                        title: "Database Web Application",
+                        subtitle: "Full-Stack Data Web App",
+                        desc: "A dynamic database-driven web application featuring a Python Flask backend connected with MySQL, styled cleanly with HTML and CSS.",
+                        techs: ["MySQL", "Python Flask", "HTML", "CSS"]
+                    }
+                ];
+                localStorage.setItem('nazmin_projects', JSON.stringify(defaultProjects));
+            }
+
+            if (!localStorage.getItem('nazmin_goals')) {
+                const defaultGoals = [
+                    { title: "Advanced Machine Learning & Predictive Modeling", icon: "fa-solid fa-brain", desc: "Specializing in supervised and unsupervised learning algorithms, model optimization, and data preprocessing to solve complex real-world classification and regression problems." },
+                    { title: "Generative AI & Intelligent Agents", icon: "fa-solid fa-robot", desc: "Exploring large language model integrations, natural language processing (NLP), and custom AI-driven automation workflows to build next-generation interactive applications." },
+                    { title: "Full-Stack AI-Powered Web Platforms", icon: "fa-solid fa-layer-group", desc: "Bridging the gap between back-end machine learning models and intuitive front-end user interfaces to deploy scalable, high-performance web applications powered by artificial intelligence." }
+                ];
+                localStorage.setItem('nazmin_goals', JSON.stringify(defaultGoals));
+            }
+
+            if (!localStorage.getItem('nazmin_gallery')) {
+                const defaultGallery = ["pic.jpeg", "pic2.jpeg", "pic3.jpeg", "pic4.jpeg", "pic5.jpeg", "pic6.jpeg"];
+                localStorage.setItem('nazmin_gallery', JSON.stringify(defaultGallery));
+            }
+        }
 
         // Owner Authentication Security System with Password Hiding / Eye Toggle
         let isOwnerUnlocked = false;
@@ -1183,7 +1233,7 @@
             if (name) {
                 const skillObj = { name, icon };
                 saveSkillToLocalStorage(skillObj);
-                appendSkillItem(skillObj.name, skillObj.icon);
+                appendSkillItem(skillObj);
 
                 document.getElementById('new-skill-name').value = '';
                 document.getElementById('new-skill-icon').value = '';
@@ -1200,30 +1250,27 @@
         }
 
         function loadStoredSkills() {
+            skillMatrixContainer.innerHTML = '';
             let skills = JSON.parse(localStorage.getItem('nazmin_skills') || '[]');
-            skills.forEach(s => appendSkillItem(s.name, s.icon));
+            skills.forEach(s => appendSkillItem(s));
         }
 
-        function appendSkillItem(name, icon) {
+        function appendSkillItem(s) {
             const pill = document.createElement('div');
             pill.className = 'skill-pill';
+            pill.setAttribute('data-id', s.name);
             pill.innerHTML = `
-                <button class="delete-btn" onclick="removeSkillItem(this)" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
-                <i class="${icon}"></i><h4>${name}</h4>
+                <button class="delete-btn" onclick="removeSkillItem(this, '${s.name.replace(/'/g, "\\'")}')" title="Delete Skill"><i class="fa-solid fa-trash-can"></i></button>
+                <i class="${s.icon}"></i><h4>${s.name}</h4>
             `;
             skillMatrixContainer.appendChild(pill);
         }
 
-        function removeSkillItem(button) {
-            const pill = button.parentElement;
-            const nameEl = pill.querySelector('h4');
-            const skillName = nameEl ? nameEl.textContent : '';
-
+        function removeSkillItem(button, skillName) {
             let skills = JSON.parse(localStorage.getItem('nazmin_skills') || '[]');
             skills = skills.filter(s => s.name !== skillName);
             localStorage.setItem('nazmin_skills', JSON.stringify(skills));
-
-            pill.remove();
+            button.parentElement.remove();
         }
 
         // LocalStorage-backed Projects Management
@@ -1260,6 +1307,7 @@
         }
 
         function loadStoredProjects() {
+            projectsGridContainer.innerHTML = '';
             let projects = JSON.parse(localStorage.getItem('nazmin_projects') || '[]');
             projects.forEach(p => appendProjectItem(p));
         }
@@ -1267,11 +1315,12 @@
         function appendProjectItem(proj) {
             const card = document.createElement('div');
             card.className = 'project-card';
+            card.setAttribute('data-id', proj.title);
             
             let chipsHtml = proj.techs.map(t => `<span class="chip">${t}</span>`).join('');
 
             card.innerHTML = `
-                <button class="delete-btn" onclick="removeProjectItem(this)" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="delete-btn" onclick="removeProjectItem(this, '${proj.title.replace(/'/g, "\\'")}')" title="Delete Project"><i class="fa-solid fa-trash-can"></i></button>
                 <div class="project-banner">
                     <h3 style="font-size: 1.4rem;">${proj.title}</h3>
                     <p style="color: var(--text-sub); font-size: 0.85rem;">${proj.subtitle}</p>
@@ -1284,16 +1333,11 @@
             projectsGridContainer.appendChild(card);
         }
 
-        function removeProjectItem(button) {
-            const card = button.parentElement;
-            const titleEl = card.querySelector('.project-banner h3');
-            const projTitle = titleEl ? titleEl.textContent : '';
-
+        function removeProjectItem(button, projTitle) {
             let projects = JSON.parse(localStorage.getItem('nazmin_projects') || '[]');
             projects = projects.filter(p => p.title !== projTitle);
             localStorage.setItem('nazmin_projects', JSON.stringify(projects));
-
-            card.remove();
+            button.parentElement.remove();
         }
 
         // LocalStorage-backed Future Goals Management
@@ -1326,6 +1370,7 @@
         }
 
         function loadStoredGoals() {
+            goalsGridContainer.innerHTML = '';
             let goals = JSON.parse(localStorage.getItem('nazmin_goals') || '[]');
             goals.forEach(g => appendGoalItem(g));
         }
@@ -1333,8 +1378,9 @@
         function appendGoalItem(goal) {
             const card = document.createElement('div');
             card.className = 'goal-card';
+            card.setAttribute('data-id', goal.title);
             card.innerHTML = `
-                <button class="delete-btn" onclick="removeGoalItem(this)" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="delete-btn" onclick="removeGoalItem(this, '${goal.title.replace(/'/g, "\\'")}')" title="Delete Goal"><i class="fa-solid fa-trash-can"></i></button>
                 <div>
                     <div class="goal-icon"><i class="${goal.icon}"></i></div>
                     <h3>${goal.title}</h3>
@@ -1344,16 +1390,11 @@
             goalsGridContainer.appendChild(card);
         }
 
-        function removeGoalItem(button) {
-            const card = button.parentElement;
-            const titleEl = card.querySelector('h3');
-            const goalTitle = titleEl ? titleEl.textContent : '';
-
+        function removeGoalItem(button, goalTitle) {
             let goals = JSON.parse(localStorage.getItem('nazmin_goals') || '[]');
             goals = goals.filter(g => g.title !== goalTitle);
             localStorage.setItem('nazmin_goals', JSON.stringify(goals));
-
-            card.remove();
+            button.parentElement.remove();
         }
 
         // LocalStorage-backed Gallery Management
@@ -1385,30 +1426,27 @@
         }
 
         function loadStoredGallery() {
+            galleryGridContainer.innerHTML = '';
             let gallery = JSON.parse(localStorage.getItem('nazmin_gallery') || '[]');
-            gallery.forEach(imgData => appendGalleryItem(imgData));
+            gallery.forEach(imgSrc => appendGalleryItem(imgSrc));
         }
 
         function appendGalleryItem(imgSrc) {
             const item = document.createElement('div');
             item.className = 'gallery-item';
             item.innerHTML = `
-                <button class="delete-btn" onclick="removeGalleryItem(this)" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                <button class="delete-btn" onclick="removeGalleryItem(this, '${imgSrc}')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                 <img src="${imgSrc}" alt="Gallery Photo">
             `;
             galleryGridContainer.appendChild(item);
         }
 
-        function removeGalleryItem(button) {
-            const item = button.parentElement;
-            const imgEl = item.querySelector('img');
-            const imgSrc = imgEl ? imgEl.src : '';
-            
+        function removeGalleryItem(button, imgSrc) {
             let gallery = JSON.parse(localStorage.getItem('nazmin_gallery') || '[]');
+            // Filter out exact source string match
             gallery = gallery.filter(img => img !== imgSrc);
             localStorage.setItem('nazmin_gallery', JSON.stringify(gallery));
-
-            item.remove();
+            button.parentElement.remove();
         }
 
         // LocalStorage-backed Certificate Management
@@ -1426,7 +1464,7 @@
                 reader.onload = function(e) {
                     const certObj = { name: certName, src: e.target.result };
                     saveCertToLocalStorage(certObj);
-                    appendCertificateItem(certObj.name, certObj.src);
+                    appendCertificateItem(certObj);
                     
                     certTitleInput.value = '';
                     certFileInput.value = '';
@@ -1445,31 +1483,27 @@
         }
 
         function loadStoredCertificates() {
+            certDisplayList.innerHTML = '';
             let certs = JSON.parse(localStorage.getItem('nazmin_certs') || '[]');
-            certs.forEach(cert => appendCertificateItem(cert.name, cert.src));
+            certs.forEach(cert => appendCertificateItem(cert));
         }
 
-        function appendCertificateItem(name, imgSrc) {
+        function appendCertificateItem(cert) {
             const card = document.createElement('div');
             card.className = 'cert-item';
             card.innerHTML = `
-                <button class="delete-btn" onclick="removeCertificateItem(this)" title="Delete Certificate"><i class="fa-solid fa-trash-can"></i></button>
-                <img src="${imgSrc}" alt="Certificate">
-                <div class="cert-caption">${name}</div>
+                <button class="delete-btn" onclick="removeCertificateItem(this, '${cert.src}')" title="Delete Certificate"><i class="fa-solid fa-trash-can"></i></button>
+                <img src="${cert.src}" alt="Certificate">
+                <div class="cert-caption">${cert.name}</div>
             `;
             certDisplayList.appendChild(card);
         }
 
-        function removeCertificateItem(button) {
-            const card = button.parentElement;
-            const imgEl = card.querySelector('img');
-            const imgSrc = imgEl ? imgEl.src : '';
-
+        function removeCertificateItem(button, certSrc) {
             let certs = JSON.parse(localStorage.getItem('nazmin_certs') || '[]');
-            certs = certs.filter(c => c.src !== imgSrc);
+            certs = certs.filter(c => c.src !== certSrc);
             localStorage.setItem('nazmin_certs', JSON.stringify(certs));
-
-            card.remove();
+            button.parentElement.remove();
         }
     </script>
 </body>
