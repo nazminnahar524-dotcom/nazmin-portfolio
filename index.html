@@ -938,19 +938,27 @@
                 <button class="btn btn-emerald" id="photo-upload-btn" style="margin-top: 1.2rem; width: 100%;"><i class="fa-solid fa-cloud-arrow-up"></i> Publish Photo to Gallery</button>
             </div>
 
-            <!-- Gallery Grid Container (Includes pic.jpeg, bafsd.jpeg, profilepic.jpeg) -->
+            <!-- Gallery Grid Container (Explicitly mapped to your exact GitHub uploaded filenames) -->
             <div class="gallery-grid" id="gallery-grid-container">
                 <div class="gallery-item" data-src="pic.jpeg">
                     <button class="delete-btn" onclick="removeGalleryItem(this, 'pic.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="pic.jpeg" alt="Gallery Picture" onerror="this.src='https://images.unsplash.com/photo-1517841905240-472988babdf9?w=500&auto=format&fit=crop&q=80'">
                 </div>
+                <div class="gallery-item" data-src="1-1 Dean.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, '1-1 Dean.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                    <img src="1-1 Dean.jpeg" alt="1-1 Dean Award" onerror="this.src='https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=500&auto=format&fit=crop&q=80'">
+                </div>
+                <div class="gallery-item" data-src="1-2 vc.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, '1-2 vc.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                    <img src="1-2 vc.jpeg" alt="1-2 VC Award" onerror="this.src='https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=500&auto=format&fit=crop&q=80'">
+                </div>
+                <div class="gallery-item" data-src="2-1 dean.jpeg">
+                    <button class="delete-btn" onclick="removeGalleryItem(this, '2-1 dean.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
+                    <img src="2-1 dean.jpeg" alt="2-1 Dean Award" onerror="this.src='https://images.unsplash.com/photo-1543269865-cbf427effbad?w=500&auto=format&fit=crop&q=80'">
+                </div>
                 <div class="gallery-item" data-src="bafsd.jpeg">
                     <button class="delete-btn" onclick="removeGalleryItem(this, 'bafsd.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
                     <img src="bafsd.jpeg" alt="BAFSD Moment" onerror="this.src='https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500&auto=format&fit=crop&q=80'">
-                </div>
-                <div class="gallery-item" data-src="profilepic.jpeg">
-                    <button class="delete-btn" onclick="removeGalleryItem(this, 'profilepic.jpeg')" title="Delete Photo"><i class="fa-solid fa-trash-can"></i></button>
-                    <img src="profilepic.jpeg" alt="Profile Picture" onerror="this.src='https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80'">
                 </div>
             </div>
         </div>
@@ -979,11 +987,10 @@
                 <button class="btn btn-emerald" id="cert-upload-btn" style="margin-top: 1.2rem; width: 100%;"><i class="fa-solid fa-plus"></i> Publish Certificate</button>
             </div>
 
-            <!-- Certificates Showcase Section (Strictly HSC & SSC only) -->
+            <!-- Certificates Showcase Section -->
             <div class="glass-card" style="margin-bottom: 4rem; max-width: 900px; margin-left: auto; margin-right: auto;">
                 <h3><i class="fa-solid fa-certificate" style="color: var(--accent-violet);"></i> Official Certificates Gallery</h3>
                 <div id="cert-display-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
-                    <!-- Strictly Hsc.jpeg and ssc.jpeg items -->
                     <div class="cert-item">
                         <button class="delete-btn" onclick="removeCertificateItem(this, 'Hsc.jpeg')" title="Delete Certificate"><i class="fa-solid fa-trash-can"></i></button>
                         <img src="Hsc.jpeg" alt="HSC Certificate">
@@ -1106,15 +1113,17 @@
             }
 
             if (!localStorage.getItem('nazmin_gallery')) {
-                const defaultGallery = ["pic.jpeg", "bafsd.jpeg", "profilepic.jpeg"];
+                const defaultGallery = ["pic.jpeg", "1-1 Dean.jpeg", "1-2 vc.jpeg", "2-1 dean.jpeg", "bafsd.jpeg"];
                 localStorage.setItem('nazmin_gallery', JSON.stringify(defaultGallery));
             }
 
-            const defaultCerts = [
-                { name: "Higher Secondary Certificate (HSC)", src: "Hsc.jpeg" },
-                { name: "Secondary School Certificate (SSC)", src: "ssc.jpeg" }
-            ];
-            localStorage.setItem('nazmin_certs', JSON.stringify(defaultCerts));
+            if (!localStorage.getItem('nazmin_certs')) {
+                const defaultCerts = [
+                    { name: "Higher Secondary Certificate (HSC)", src: "Hsc.jpeg" },
+                    { name: "Secondary School Certificate (SSC)", src: "ssc.jpeg" }
+                ];
+                localStorage.setItem('nazmin_certs', JSON.stringify(defaultCerts));
+            }
         }
 
         // Owner Authentication Security System with Password Hiding / Eye Toggle
