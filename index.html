@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nazmin Nahar | CSE Student & Technology Enthusiast</title>
+
+    <meta name="description"
+        content="Portfolio of Nazmin Nahar, a Computer Science & Engineering student at the University of Asia Pacific with interests in Software Engineering, Machine Learning, Artificial Intelligence, and technology. She completed her SSC and HSC at BAF Shaheen College Dhaka.">
+
+    <meta name="author" content="Nazmin Nahar">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Nazmin Nahar | CSE Student & Technology Enthusiast">
+    <meta property="og:description"
+        content="Portfolio of Nazmin Nahar, a Computer Science & Engineering student at the University of Asia Pacific with interests in Software Engineering, Machine Learning, Artificial Intelligence, and technology. She completed her SSC and HSC at BAF Shaheen College Dhaka.">
+    <meta property="og:image" content="assets/profile/profilepic.jpeg">
+
+    <link rel="icon" href="data:,">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+
+    <!-- ===================== NAVBAR ===================== -->
+
+    <header class="navbar" id="navbar">
+
+        <div class="nav-inner">
+
+            <a href="#home"
+               class="nav-logo"
+               aria-label="Nazmin Nahar home">
+
+                <span class="logo-bracket">&lt;</span>
+                NN
+                <span class="logo-bracket">/&gt;</span>
+
+            </a>
+
+
+            <nav class="nav-links"
+                 id="navLinks"
+                 aria-label="Primary navigation">
+
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#goals" class="nav-link">Goals</a>
+                <a href="#location" class="nav-link">Location</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
+
+                <button class="theme-toggle"
+                        id="themeToggle"
+                        aria-label="Toggle dark and light mode"
+                        title="Toggle theme">
+
+                    <i class="fa-solid fa-moon"
+                       id="themeIconMoon"></i>
+
+                    <i class="fa-solid fa-sun"
+                       id="themeIconSun"></i>
+
+                </button>
+
+
+                <button class="hamburger"
+                        id="hamburger"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="mobileMenu">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile menu -->
+
+        <div class="mobile-menu" id="mobileMenu">
+
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#certificates" class="mobile-link">Certificates</a>
+            <a href="#gallery" class="mobile-link">Gallery</a>
+            <a href="#goals" class="mobile-link">Goals</a>
+            <a href="#location" class="mobile-link">Location</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ===================== HERO ===================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-bg" aria-hidden="true">
+
+            <canvas id="heroCanvas"></canvas>
+
+            <div class="hero-grid"></div>
+
+        </div>
+
+
+        <div class="hero-inner">
+
+            <div class="hero-text reveal">
+
+                <p class="eyebrow">// hello_world</p>
+
+                <p class="hero-greeting">
+                    Hello, I'm
+                </p>
+
+                <h1 class="hero-name">
+                    Nazmin Nahar
+                </h1>
+
+                <p class="hero-role">
+                    CSE Student & Technology Enthusiast
+                </p>
+
+                <p class="hero-intro">
+                    A passionate Computer Science & Engineering student
+                    with a strong academic foundation, programming
+                    experience, and a growing interest in Software
+                    Engineering, Machine Learning, Artificial Intelligence,
+                    and technology-driven problem solving.
+                </p>
+
+
+                <div class="hero-cta">
+
+                    <a href="#projects"
+                       class="btn btn-primary"
+                       data-scroll>
+
+                        Explore My Work
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                    <a href="#contact"
+                       class="btn btn-outline"
+                       data-scroll>
+
+                        Contact Me
+
+                    </a>
+
+                </div>
+
+
+                <div class="hero-socials">
+
+                    <a href="https://github.com/nazminnahar524-dotcom"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="GitHub profile"
+                       class="social-icon">
+
+                        <i class="fa-brands fa-github"></i>
+
+                    </a>
+
+
+                    <a href="https://www.linkedin.com/in/nazmin-nahar-60191a316/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="LinkedIn profile"
+                       class="social-icon">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                    </a>
+
+
+                    <a href="mailto:nazminnahar524@gmail.com"
+                       aria-label="Send email"
+                       class="social-icon">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual reveal">
+
+                <div class="profile-frame">
+
+                    <div class="profile-glow"
+                         aria-hidden="true"></div>
+
+
+                    <button class="profile-img-btn"
+                            id="profileImgBtn"
+                            aria-label="View full-size profile photo">
+
+                        <img src="assets/profile/profilepic.jpeg"
+                             alt="Portrait of Nazmin Nahar"
+                             class="profile-img"
+                             loading="lazy">
+
+                    </button>
+
+
+                    <div class="profile-badge">
+
+                        <i class="fa-solid fa-code"></i>
+
+                    </div>
+
+                </div>
+
+
+                <div class="code-card"
+                     aria-hidden="true">
+
+                    <div class="code-card-header">
+
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+
+                        <span class="code-card-title">
+                            profile.js
+                        </span>
+
+                    </div>
+
+
+                    <pre class="code-card-body"><span class="tok-key">const</span> <span class="tok-var">student</span> <span class="tok-op">=</span> {
+  <span class="tok-prop">name</span>: <span class="tok-str">"Nazmin Nahar"</span>,
+  <span class="tok-prop">university</span>: <span class="tok-str">"University of Asia Pacific"</span>,
+  <span class="tok-prop">cgpa</span>: <span class="tok-num">3.91</span>,
+  <span class="tok-prop">interests</span>: [<span class="tok-str">"SE"</span>, <span class="tok-str">"ML"</span>, <span class="tok-str">"AI"</span>]
+};<span class="cursor-blink">|</span></pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <a href="#about"
+           class="scroll-cue"
+           data-scroll
+           aria-label="Scroll to About section">
+
+            <i class="fa-solid fa-chevron-down"></i>
+
+        </a>
+
+    </section>
+
+
+    <!-- ===================== ABOUT ===================== -->
+
+    <section class="section" id="about">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // about
+            </p>
+
+
+            <h2 class="section-title reveal">
+                About Me
+            </h2>
+
+
+            <div class="about-grid">
+
+                <div class="about-copy reveal">
+
+                    <p>
+                        Nazmin Nahar is a Computer Science & Engineering
+                        student at the
+                        <strong>University of Asia Pacific</strong>,
+                        currently in her 3rd year, 1st semester, holding
+                        a current CGPA of <strong>3.91</strong>.
+                        Her academic journey reflects consistent dedication,
+                        with a strong record built through disciplined study
+                        and steady problem solving.
+                    </p>
+
+
+                    <p>
+                        Alongside her coursework, Nazmin has been building
+                        hands-on programming experience across multiple
+                        languages and technologies, and is steadily deepening
+                        her understanding of core computer science concepts
+                        such as data structures, algorithms, and database
+                        systems.
+                    </p>
+
+
+                    <p>
+                        She is especially drawn to
+                        <strong>Software Engineering</strong> as a career
+                        path, with a growing interest in
+                        <strong>Machine Learning</strong> and
+                        <strong>Artificial Intelligence</strong> —
+                        fields she is actively exploring as she works
+                        toward building practical, technology-driven
+                        solutions to real-world problems.
+                    </p>
+
+                </div>
+
+
+                <div class="info-card reveal">
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <span class="info-label">
+                            Name
+                        </span>
+
+                        <span class="info-value">
+                            Nazmin Nahar
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <span class="info-label">
+                            Role
+                        </span>
+
+                        <span class="info-value">
+                            CSE Student & Technology Enthusiast
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-sitemap"></i>
+
+                        <span class="info-label">
+                            Department
+                        </span>
+
+                        <span class="info-value">
+                            Computer Science & Engineering
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-building-columns"></i>
+
+                        <span class="info-label">
+                            University
+                        </span>
+
+                        <span class="info-value">
+                            University of Asia Pacific
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+
+                        <span class="info-label">
+                            Year
+                        </span>
+
+                        <span class="info-value">
+                            3rd Year
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <span class="info-label">
+                            Semester
+                        </span>
+
+                        <span class="info-value">
+                            1st Semester
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                        <span class="info-label">
+                            CGPA
+                        </span>
+
+                        <span class="info-value">
+                            3.91
+                        </span>
+
+                    </div>
+
+
+                    <div class="info-row">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <span class="info-label">
+                            Location
+                        </span>
+
+                        <span class="info-value">
+                            West Nakhalpara, Dhaka
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Academic statistics -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number"
+                         data-count="3.91">
+
+                        0
+
+                    </div>
+
+                    <div class="stat-label">
+                        Current CGPA
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number"
+                         data-count="5.00">
+
+                        0
+
+                    </div>
+
+                    <div class="stat-label">
+                        SSC GPA
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number"
+                         data-count="5.00">
+
+                        0
+
+                    </div>
+
+                    <div class="stat-label">
+                        HSC GPA
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card reveal">
+
+                    <div class="stat-number"
+                         data-count="4">
+
+                        0
+
+                    </div>
+
+                    <div class="stat-label">
+                        Semester Awards
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== EDUCATION ===================== -->
+
+    <section class="section section-alt"
+             id="education">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // education
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Education Timeline
+            </h2>
+
+
+            <div class="timeline">
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            University of Asia Pacific
+                        </h3>
+
+                        <p class="timeline-meta">
+                            Computer Science & Engineering
+                        </p>
+
+                        <p class="timeline-meta">
+                            3rd Year — 1st Semester
+                        </p>
+
+                        <span class="badge">
+                            Current CGPA: 3.91
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-school"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            BAF Shaheen College Dhaka
+                        </h3>
+
+                        <p class="timeline-meta">
+                            BAF Shaheen College Dhaka
+                        </p>
+
+                        <p class="timeline-meta">
+                            Higher Secondary Education (HSC)
+                        </p>
+
+                        <span class="badge">
+                            GPA: 5.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item reveal">
+
+                    <div class="timeline-icon">
+
+                        <i class="fa-solid fa-book"></i>
+
+                    </div>
+
+
+                    <div class="timeline-content">
+
+                        <h3>
+                            BAF Shaheen College Dhaka
+                        </h3>
+
+                        <p class="timeline-meta">
+                            BAF Shaheen College Dhaka
+                        </p>
+
+                        <p class="timeline-meta">
+                            Secondary Education (SSC)
+                        </p>
+
+                        <span class="badge">
+                            GPA: 5.00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== SKILLS ===================== -->
+
+    <section class="section"
+             id="skills">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // skills
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Technical Skills
+            </h2>
+
+
+            <h3 class="subsection-title reveal">
+                Programming Languages
+            </h3>
+
+            <div class="skills-grid"
+                 id="langSkills">
+            </div>
+
+
+            <h3 class="subsection-title reveal">
+                Web & Technical Skills
+            </h3>
+
+            <div class="skills-grid"
+                 id="webSkills">
+            </div>
+
+
+            <h3 class="subsection-title reveal">
+                Areas of Interest
+            </h3>
+
+            <div class="skills-grid"
+                 id="interestSkills">
+            </div>
+
+
+            <h3 class="subsection-title reveal">
+                Technical Focus
+            </h3>
+
+            <div class="focus-grid"
+                 id="focusGrid">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== PROJECTS ===================== -->
+
+    <section class="section section-alt"
+             id="projects">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // projects
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Featured Projects
+            </h2>
+
+
+            <div class="projects-grid"
+                 id="projectsGrid">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== CERTIFICATES ===================== -->
+
+    <section class="section section-alt"
+             id="certificates">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // certificates
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Certificates & Credentials
+            </h2>
+
+
+            <div class="filter-bar reveal"
+                 id="certFilterBar">
+
+                <button class="filter-btn active"
+                        data-filter="All">
+
+                    All
+
+                </button>
+
+
+                <button class="filter-btn"
+                        data-filter="Academic">
+
+                    Academic
+
+                </button>
+
+
+                <button class="filter-btn"
+                        data-filter="Academic Award">
+
+                    Academic Awards
+
+                </button>
+
+
+                <button class="filter-btn"
+                        data-filter="Activity">
+
+                    Activities
+
+                </button>
+
+            </div>
+
+
+            <div class="cert-grid"
+                 id="certGrid">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== GALLERY ===================== -->
+
+    <section class="section"
+             id="gallery">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // gallery
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Photo Gallery
+            </h2>
+
+
+            <div class="gallery-grid"
+                 id="galleryGrid">
+            </div>
+
+
+            <p class="empty-note"
+               id="galleryEmpty"
+               hidden>
+
+                Gallery images coming soon.
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== GOALS ===================== -->
+
+    <section class="section section-alt"
+             id="goals">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // career_goals
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Career Goals
+            </h2>
+
+
+            <div class="goals-grid">
+
+
+                <div class="goal-card reveal">
+
+                    <div class="goal-icon">
+
+                        <i class="fa-solid fa-diagram-project"></i>
+
+                    </div>
+
+                    <h3>
+                        Software Engineering
+                    </h3>
+
+                    <p>
+                        Build a strong career in software engineering
+                        and develop practical, reliable software solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="goal-card reveal">
+
+                    <div class="goal-icon">
+
+                        <i class="fa-solid fa-brain"></i>
+
+                    </div>
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+                    <p>
+                        Develop deeper knowledge of Machine Learning
+                        and its applications.
+                    </p>
+
+                </div>
+
+
+                <div class="goal-card reveal">
+
+                    <div class="goal-icon">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                    </div>
+
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
+
+                    <p>
+                        Explore AI and intelligent systems.
+                    </p>
+
+                </div>
+
+
+                <div class="goal-card reveal">
+
+                    <div class="goal-icon">
+
+                        <i class="fa-solid fa-gears"></i>
+
+                    </div>
+
+                    <h3>
+                        Problem Solving & Automation
+                    </h3>
+
+                    <p>
+                        Use programming, algorithms, automation,
+                        and technology to solve real-world problems.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <h3 class="subsection-title reveal"
+                style="text-align:center;margin-top:4rem;">
+
+                What I'm Working Toward
+
+            </h3>
+
+
+            <div class="roadmap"
+                 id="roadmap">
+
+                <div class="roadmap-node reveal">
+
+                    <span>
+                        Programming Foundation
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-node reveal">
+
+                    <span>
+                        Data Structures & Algorithms
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-node reveal">
+
+                    <span>
+                        Software Engineering
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-node reveal">
+
+                    <span>
+                        Machine Learning
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-node reveal">
+
+                    <span>
+                        Artificial Intelligence
+                    </span>
+
+                </div>
+
+
+                <div class="roadmap-node reveal roadmap-final">
+
+                    <span>
+                        Intelligent Real-World Solutions
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== LOCATION ===================== -->
+
+    <section class="section"
+             id="location">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // location
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Where I'm Located
+            </h2>
+
+
+            <p class="section-sub reveal">
+                Based in West Nakhalpara, Dhaka, Bangladesh.
+            </p>
+
+
+            <div class="location-grid">
+
+
+                <div class="location-card reveal">
+
+                    <div class="location-card-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+
+                    <h3>
+                        West Nakhalpara
+                    </h3>
+
+
+                    <p class="location-card-sub">
+                        Dhaka, Bangladesh
+                    </p>
+
+
+                    <p>
+                        Currently based in Dhaka, Bangladesh.
+                    </p>
+
+
+                    <button class="btn btn-outline btn-block"
+                            id="googleMapsBtn">
+
+                        Open in Google Maps
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="map-wrap reveal">
+
+                    <div id="map"
+                         role="application"
+                         aria-label="Map showing the approximate West Nakhalpara area of Dhaka">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== CONTACT ===================== -->
+
+    <section class="section section-alt"
+             id="contact">
+
+        <div class="container">
+
+            <p class="eyebrow reveal">
+                // contact
+            </p>
+
+
+            <h2 class="section-title reveal">
+                Get In Touch
+            </h2>
+
+
+            <div class="contact-grid">
+
+
+                <div class="contact-info reveal">
+
+
+                    <a class="contact-item"
+                       href="mailto:nazminnahar524@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <span class="contact-label">
+                                Email
+                            </span>
+
+                            <span class="contact-value">
+                                nazminnahar524@gmail.com
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="contact-item"
+                       href="https://github.com/nazminnahar524-dotcom"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-github"></i>
+
+                        <div>
+
+                            <span class="contact-label">
+                                GitHub
+                            </span>
+
+                            <span class="contact-value">
+                                nazminnahar524-dotcom
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <a class="contact-item"
+                       href="https://www.linkedin.com/in/nazmin-nahar-60191a316/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-linkedin-in"></i>
+
+                        <div>
+
+                            <span class="contact-label">
+                                LinkedIn
+                            </span>
+
+                            <span class="contact-value">
+                                nazmin-nahar-60191a316
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <div class="contact-item contact-item-static">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <span class="contact-label">
+                                Location
+                            </span>
+
+                            <span class="contact-value">
+                                West Nakhalpara, Dhaka, Bangladesh
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ===================== UPDATED BUTTON ===================== -->
+
+                    <a href="https://github.com/nazminnahar524-dotcom"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-primary btn-block"
+                       style="margin-top:1rem;">
+
+                        View GitHub
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </a>
+
+                </div>
+
+
+                <form class="contact-form reveal"
+                      id="contactForm"
+                      novalidate>
+
+
+                    <div class="form-group">
+
+                        <label for="fname">
+                            Name
+                        </label>
+
+                        <input type="text"
+                               id="fname"
+                               name="name"
+                               placeholder="Your name">
+
+                        <span class="form-error"
+                              id="err-name">
+                        </span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="femail">
+                            Email
+                        </label>
+
+                        <input type="email"
+                               id="femail"
+                               name="email"
+                               placeholder="you@example.com">
+
+                        <span class="form-error"
+                              id="err-email">
+                        </span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="fsubject">
+                            Subject
+                        </label>
+
+                        <input type="text"
+                               id="fsubject"
+                               name="subject"
+                               placeholder="Subject">
+
+                        <span class="form-error"
+                              id="err-subject">
+                        </span>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="fmessage">
+                            Message
+                        </label>
+
+                        <textarea id="fmessage"
+                                  name="message"
+                                  rows="5"
+                                  placeholder="Write your message (minimum 20 characters)"></textarea>
+
+                        <span class="form-error"
+                              id="err-message">
+                        </span>
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="btn btn-primary btn-block">
+
+                        Send Message
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                    </button>
+
+
+                    <p class="form-note">
+
+                        Submitting opens your email client addressed to
+                        nazminnahar524@gmail.com — this form does not send
+                        messages directly from the browser.
+
+                    </p>
+
+
+                    <div class="form-status"
+                         id="formStatus"
+                         role="status"
+                         aria-live="polite">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ===================== FOOTER ===================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+
+            <div class="footer-brand">
+
+                <span class="footer-logo">
+                    &lt;NN/&gt;
+                </span>
+
+
+                <p>
+                    Nazmin Nahar
+                </p>
+
+
+                <p class="footer-muted">
+                    CSE Student & Technology Enthusiast
+                </p>
+
+
+                <p class="footer-muted">
+                    University of Asia Pacific
+                </p>
+
+            </div>
+
+
+            <div class="footer-socials">
+
+
+                <a href="https://github.com/nazminnahar524-dotcom"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub"
+                   class="social-icon">
+
+                    <i class="fa-brands fa-github"></i>
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/nazmin-nahar-60191a316/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn"
+                   class="social-icon">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+
+                <a href="mailto:nazminnahar524@gmail.com"
+                   aria-label="Email"
+                   class="social-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p class="footer-copy">
+
+            &copy;
+
+            <span id="year"></span>
+
+            Nazmin Nahar. All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+
+    <!-- Back to top -->
+
+    <button class="back-to-top"
+            id="backToTop"
+            aria-label="Back to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+    <!-- ===================== MODALS / LIGHTBOXES ===================== -->
+
+
+    <!-- Profile lightbox -->
+
+    <div class="lightbox"
+         id="profileLightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Profile photo viewer">
+
+        <button class="lightbox-close"
+                id="profileLightboxClose"
+                aria-label="Close">
+
+            &times;
+
+        </button>
+
+
+        <img src="assets/profile/profilepic.jpeg"
+             alt="Nazmin Nahar full-size portrait"
+             class="lightbox-img">
+
+    </div>
+
+
+    <!-- Gallery lightbox -->
+
+    <div class="lightbox"
+         id="galleryLightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Gallery photo viewer">
+
+        <button class="lightbox-close"
+                id="galleryLightboxClose"
+                aria-label="Close">
+
+            &times;
+
+        </button>
+
+
+        <button class="lightbox-nav lightbox-prev"
+                id="galleryPrev"
+                aria-label="Previous photo">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <img src=""
+             alt=""
+             class="lightbox-img"
+             id="galleryLightboxImg">
+
+
+        <button class="lightbox-nav lightbox-next"
+                id="galleryNext"
+                aria-label="Next photo">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Certificate lightbox -->
+
+    <div class="lightbox"
+         id="certLightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Certificate viewer">
+
+        <button class="lightbox-close"
+                id="certLightboxClose"
+                aria-label="Close">
+
+            &times;
+
+        </button>
+
+
+        <button class="lightbox-nav lightbox-prev"
+                id="certPrev"
+                aria-label="Previous certificate">
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+        <figure class="lightbox-figure">
+
+            <img src=""
+                 alt=""
+                 class="lightbox-img"
+                 id="certLightboxImg">
+
+            <figcaption id="certLightboxCaption"></figcaption>
+
+        </figure>
+
+
+        <button class="lightbox-nav lightbox-next"
+                id="certNext"
+                aria-label="Next certificate">
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+    </div>
+
+
+    <!-- Project modal -->
+
+    <div class="modal-overlay"
+         id="projectModal"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Project details">
+
+        <div class="modal-box">
+
+            <button class="modal-close"
+                    id="projectModalClose"
+                    aria-label="Close">
+
+                &times;
+
+            </button>
+
+
+            <div id="projectModalContent"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Leaflet -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin="">
+    </script>
+
+
+    <!-- Main JavaScript -->
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
